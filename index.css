@@ -4,7 +4,7 @@
 
   /* Set a specific height */
   win-height:100%;
-  height: 1000px;
+
   width:100%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
