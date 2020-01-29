@@ -4710,6 +4710,10 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple,
     display: none
 }
 
+.layout-spacer2 {
+    width: 45%;
+}
+
 .mdl-layout.is-small-screen .layout-spacer2 {
     /*flex-grow: 1;*/
     width: 3%;
