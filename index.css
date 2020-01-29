@@ -1,3 +1,118 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Sans+Open';
+    text-align: center;
+}
+
+.logo :hover {
+    opacity: 1;
+}
+
+
+/* The sidebar menu */
+
+.sidenav {
+    /*height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 300px;
+    /* Set the width of the sidebar */
+    text-align: center;
+}
+
+
+/* The navigation menu links */
+
+.sidenav .mdl-navigation__link,
+.sidenav .mdl-js-ripple-effect,
+.sidenav .mdl-js-button {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #000000;
+    display: block;
+    font-weight: bold;
+    transition: opacity 1s;
+}
+
+header .mdl-navigation__link,
+header .mdl-js-ripple-effect,
+header .mdl-js-button {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #000000;
+    display: block;
+    font-weight: bold;
+    transition: opacity 1s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:not(.logo):hover {
+    opacity: 0.3;
+}
+
+.sidenav ul {
+    padding: 0;
+    align-self: center;
+    list-style: none;
+}
+
+.sidenav li {
+    list-style: none;
+}
+
+.sidenav a,
+header a {
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.sidenav a:after,
+header a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.sidenav a:hover:after,
+header a:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+
+/* Style page content */
+
+.main {
+    padding: 0px 10px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
